@@ -5,6 +5,6 @@ import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
 contract RobCoin is ERC20 {
     constructor(uint256 initialSupply) ERC20("RobCoin", "ROB") {
-        _mint(msg.sender, 100 * 10**6);
+        _mint(msg.sender, initialSupply);
     }
 }
